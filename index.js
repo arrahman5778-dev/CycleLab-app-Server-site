@@ -128,6 +128,7 @@ run().catch(console.dir);
 
 app.get("/", (req, res) => {
   res.send("databage");
+  console.log("work");
 });
 
 app.listen(port, () => {

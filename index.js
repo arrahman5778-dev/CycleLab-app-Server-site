@@ -11,12 +11,7 @@ const jwt = require("jsonwebtoken");
 app.use(cors());
 app.use(express.json());
 
-const uri = `mongodb+srv://${process.env.USER_NAME}:${process.env.USER_PASS}@cluster0.attrdyd.mongodb.net/?retryWrites=true&w=majority;`;
-const client = new MongoClient(uri, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  serverApi: ServerApiVersion.v1,
-});
+
 
 async function run() {
   try {
@@ -128,7 +123,7 @@ run().catch(console.dir);
 
 app.get("/", (req, res) => {
   res.send("databage");
-  console.log("work");
+  
 });
 
 app.listen(port, () => {

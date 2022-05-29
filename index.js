@@ -127,8 +127,7 @@ async function run() {
 run().catch(console.dir);
 
 app.get("/", (req, res) => {
-  res.send("databage");
-  
+  res.send("databage to mongoDb");
 });
 
 app.listen(port, () => {

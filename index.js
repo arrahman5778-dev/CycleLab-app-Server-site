@@ -134,7 +134,7 @@ app.listen(port, () => {
   console.log(`listing to the port Of : `, port);
 });
 
-// verify token
+// verify toke
 function verifyToken(token) {
   let email;
   jwt.verify(token, process.env.ACCESS_TOKEN, function (err, decoded) {
